@@ -73,8 +73,29 @@ public class Main {
                     break;
             }
         }
+        while (true) {
+            System.out.println("Scrivi un numero da 1 a 5, scrivi 0 per uscire ");
+            int input = scanner.nextInt();
+            switch (input) {
+                case 0:
+                    System.out.println("Sei uscito");
+                    scanner.close();
+                    break;
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Hai selezionato l'elemento" + input);
+                    break;
+                default:
+                    System.out.println("Input error");
+                    break;
 
-        scanner.close();
+
+            }
+        }
+
     }
 
 
