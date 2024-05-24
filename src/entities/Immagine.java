@@ -1,35 +1,45 @@
 package entities;
 
-  import interfaces.Shower;
+import interfaces.Shower;
 
 public class Immagine extends ElementoMultimediale implements Shower {
     //ATTRIBUTI luminosita nome
 
-   private int luminosità;
+    private int luminosità;
 
 
     //COSTRUTTORE
 
 
-    public Immagine(String name, String name1, int luminosità) {
+    public Immagine(String name, int luminosità) {
         super(name);
 
         this.luminosità = luminosità;
     }
 
     //METODO show()
-  @Override
-    public void show(){
-        for (int i = 0; i < 1 ; i++) {
+    @Override
+    public void show() {
+        for (int i = 0; i < 1; i++) {
             System.out.println("-----INIZIO FOR------");
             StringBuilder asterisco = new StringBuilder();
-            for (int j = 0; j < luminosità ; j++) {
+            for (int j = 0; j < luminosità; j++) {
                 asterisco.append("*");
             }
-            System.out.println(this.name + asterisco );
+            System.out.println(this.name + asterisco);
 
         }
 
+    }
+
+    public void alzaLuminosità() {
+        System.out.println("Hai alzato la luminosità a: " + (this.luminosità + 1));
+        this.luminosità++;
+    }
+
+    public void abbassaLuminosità() {
+        System.out.println("Hai abbassato la luminosità a: " + (this.luminosità - 1));
+        this.luminosità--;
     }
 
 }

@@ -1,11 +1,8 @@
 package entities;
+
 import interfaces.Player;
 
-
-
-
 public class Video extends ElementoMultimediale implements Player {
-
     // ATTRIBUTI
     private int luminosità;
     private int volume;
@@ -21,7 +18,7 @@ public class Video extends ElementoMultimediale implements Player {
 
     // METODO play()
     public void play() {
-            System.out.println("-----INIZIO FOR VIDEO------");
+        System.out.println("-----INIZIO FOR VIDEO------");
         for (int i = 0; i < durata; i++) {
             StringBuilder esclamativo = new StringBuilder();
             StringBuilder asterisco = new StringBuilder();
@@ -62,12 +59,16 @@ public class Video extends ElementoMultimediale implements Player {
 }
 
 /*
-*video riproducibile
-*METODI ALZA E ABBASSA VOLUME
-*METODI ALZA E ABBASSA LUMINOSITA
-*playvideo deve:
-*durata stampa il titolo n volte, n= durata
-*!=volume
-* *=luminosita
-*
-* */
+ *video riproducibile
+ *METODI ALZA E ABBASSA VOLUME
+ *METODI ALZA E ABBASSA LUMINOSITA
+ *playvideo deve:
+ *durata stampa il titolo n volte, n= durata
+ *!=volume
+ * *=luminosita
+ *
+ * */
+
+
+
+
