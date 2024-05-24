@@ -1,8 +1,7 @@
 package entities;
-
 import interfaces.Player;
 
-public class Audio extends ElementoMultimediale  {
+public class Audio extends ElementoMultimediale implements Player {
 
     //ATTRIBUTI di audio volume  durata nome
 
@@ -25,7 +24,7 @@ public class Audio extends ElementoMultimediale  {
 
 
 
-    public void playAudio() {
+    public void play() {
         for (int i = 0; i < durata ; i++) {
             System.out.println("-----INIZIO FOR------");
     StringBuilder esclamativo = new StringBuilder();
@@ -41,16 +40,21 @@ public class Audio extends ElementoMultimediale  {
 
 
 
-public void abbassaVolume(){
-    System.out.println("Il volume di "+ this.name + " prima era: " + this.volume + " adesso è settato a: " +  (this.volume - 1) );
+    public void abbassaVolume() {
+        System.out.println("Il volume di " + this.name + " prima era: " + this.volume + " adesso è settato a: " + (this.volume - 1));
+        this.volume--;
+    }
 
-}
-public void alzaVolume(){
-    System.out.println("Il volume di "+ this.name + " prima era: " + this.volume + " adesso è settato a: " +  (this.volume + 1) );
+    public void alzaVolume() {
+        System.out.println("Il volume di " + this.name + " prima era: " + this.volume + " adesso è settato a: " + (this.volume + 1));
+        this.volume++;
+    }
 
-}
 
+    @Override
+    public void show() {
 
+    }
 }
 /* audio è riproducibile con play
 * metodi abbassaVolume() e alzaVolume()

@@ -10,6 +10,9 @@ public abstract class ElementoMultimediale {
         this.name = name;
     }
 
+    //METODO show()
+  public abstract void show();
+
 //METODI
 
 
