@@ -13,7 +13,7 @@ public class Immagine extends ElementoMultimediale implements Shower {
 
     public Immagine(String name, String name1, int luminosità) {
         super(name);
-        this.name = name1;
+
         this.luminosità = luminosità;
     }
 

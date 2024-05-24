@@ -14,7 +14,7 @@ public class Video extends ElementoMultimediale implements Player {
 
     public Video(String name, String name1, int luminosità, int volume, int durata) {
         super(name);
-        this.name = name1;
+
         this.luminosità = luminosità;
         this.volume = volume;
         this.durata = durata;

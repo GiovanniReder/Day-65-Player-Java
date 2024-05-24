@@ -10,7 +10,7 @@ public abstract class ElementoMultimediale {
         this.name = name;
     }
 
-//METODO
+//METODI
 
 
 }
