@@ -2,7 +2,7 @@ package entities;
 
 public abstract class ElementoMultimediale {
     //ATTRIBUTI
-   protected String name;
+    protected String name;
 
 //COSTRUTTORE
 
@@ -11,9 +11,6 @@ public abstract class ElementoMultimediale {
     }
 
     //METODO show()
-  public abstract void show();
-
-//METODI
-
-
+//  public abstract void show();
+//  public abstract void play();
 }

@@ -25,7 +25,7 @@ public class Audio extends ElementoMultimediale implements Player {
 
     public void play() {
         for (int i = 0; i < durata; i++) {
-            System.out.println("-----INIZIO FOR------");
+            System.out.println("-----INIZIO FOR AUDIO------");
             StringBuilder esclamativo = new StringBuilder();
             for (int j = 0; j < volume; j++) {
                 esclamativo.append("!");
@@ -33,7 +33,7 @@ public class Audio extends ElementoMultimediale implements Player {
             System.out.println(this.name + esclamativo);
 
         }
-        System.out.println("-----FINE FOR------");
+        System.out.println("-----FINE FOR AUDIO------");
     }
 
 
@@ -48,10 +48,6 @@ public class Audio extends ElementoMultimediale implements Player {
     }
 
 
-    @Override
-    public void show() {
-
-    }
 }
 /* audio è riproducibile con play
  * metodi abbassaVolume() e alzaVolume()

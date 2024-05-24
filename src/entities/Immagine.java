@@ -21,7 +21,7 @@ public class Immagine extends ElementoMultimediale implements Shower {
     @Override
     public void show() {
         for (int i = 0; i < 1; i++) {
-            System.out.println("-----INIZIO FOR------");
+            System.out.println("-----INIZIO FOR IMMAGINE------");
             StringBuilder asterisco = new StringBuilder();
             for (int j = 0; j < luminosità; j++) {
                 asterisco.append("*");
@@ -29,7 +29,7 @@ public class Immagine extends ElementoMultimediale implements Shower {
             System.out.println(this.name + asterisco);
 
         }
-
+        System.out.println("-----FINE FOR IMMAGINE------");
     }
 
     public void alzaLuminosità() {
@@ -44,15 +44,6 @@ public class Immagine extends ElementoMultimediale implements Shower {
 
 }
 /*luminosita
-* metodo show
-*stampa il titolo concatenato a una sequenza di asterischi di lunghezza pari a luminosità
-*
-*    public void playAudio() {
-
-    }
-*
-*
-*
-*
-*
-* */
+ * metodo show
+ *stampa il titolo concatenato a una sequenza di asterischi di lunghezza pari a luminosità
+ */

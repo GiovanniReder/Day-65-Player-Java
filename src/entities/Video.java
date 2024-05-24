@@ -30,6 +30,7 @@ public class Video extends ElementoMultimediale implements Player {
             }
             System.out.println(this.name + esclamativo + asterisco);
         }
+        System.out.println("-----FINE FOR VIDEO------");
     }
 
     public void abbassaVolume() {
@@ -52,11 +53,8 @@ public class Video extends ElementoMultimediale implements Player {
         this.luminosità--;
     }
 
-    @Override
-    public void show() {
-
-    }
 }
+
 
 /*
  *video riproducibile
